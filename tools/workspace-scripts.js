@@ -57,12 +57,19 @@ module.exports = {
 			},
 		},
 		'⚙️': {
-			script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-			description: '_____________  @nativescript/*  _____________',
+			script: `npx cowsay "@pekevski/* packages will keep your ⚙️ cranking"`,
+			description: '_____________  @pekevski/*  _____________',
 		},
 		// packages
 		// build output is always in dist/packages
-		'@nativescript': {
+		'@pekevski': {
+			// @pekevski/nativescript-downloader
+			'nativescript-downloader': {
+				build: {
+					script: 'nx run nativescript-downloader:build.all',
+					description: '@pekevski/nativescript-downloader: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -73,10 +80,14 @@ module.exports = {
 			description: '_____________  Focus (VS Code supported)  _____________',
 		},
 		focus: {
+			'nativescript-downloader': {
+				script: 'nx run nativescript-downloader:focus',
+				description: 'Focus on @pekevski/nativescript-downloader',
+			},
 			reset: {
 				script: 'nx run all:focus',
 				description: 'Reset Focus',
-			}
+			},
 		},
 		'.....................': {
 			script: `npx cowsay "That's all for now folks ~"`,
