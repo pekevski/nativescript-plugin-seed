@@ -1,5 +1,4 @@
 import { DemoSharedBase } from '../utils';
-import {  } from '@pekevski/typeorm';
 
 export class DemoSharedTypeorm extends DemoSharedBase {
 
