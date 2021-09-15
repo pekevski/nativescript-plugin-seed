@@ -1,5 +1,4 @@
-import { Utils } from "@nativescript/webpack";
-import { ProvidePlugin } from "webpack";
+
 /**
  * This optionally provides typehints
  * this requires "@nativescript/webpack" to be a dependency (dev)
@@ -17,7 +16,7 @@ module.exports = (webpack) => {
 		const fallback = config.resolve.get("fallback");
 		config.resolve.set(
 			"fallback",
-			Utils.merge(fallback || {}, {
+			webpack.Utils.merge(fallback || {}, {
 				assert: require.resolve("assert/"),
 				buffer: require.resolve("buffer/"),
 				events: require.resolve("events/"),
@@ -55,7 +54,7 @@ module.exports = (webpack) => {
 			"mssql"
 		]);
 
-		config.plugin("ProvidePlugin|Polyfills").use(ProvidePlugin, [
+		config.plugin("ProvidePlugin|Polyfills").use(webpack.ProvidePlugin, [
 			{ Buffer: [require.resolve("buffer/"), "Buffer"] }
 		]);
 
