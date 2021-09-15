@@ -1,4 +1,6 @@
 const { ProvidePlugin } = require("webpack");
+const fs = require('fs');
+const path = require('path');
 
 /**
  * This optionally provides typehints
@@ -10,7 +12,7 @@ module.exports = (webpack) => {
     webpack.chainWebpack(config => {
 		
 		config.resolve.alias.set("supports-color", "supports-color/browser");
-		config.resolve.alias.set("app-root-path", "~/shim/app-root-path");
+		config.resolve.alias.set("app-root-path", "./shim/app-root-path");
 		
 		// Add fallbacks for packages that TypeORM requires to work
 		// based off webpack v4 fallbacks https://webpack.js.org/configuration/resolve/#resolvefallback
