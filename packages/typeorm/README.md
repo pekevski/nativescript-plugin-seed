@@ -7,9 +7,12 @@ ns plugin add @pekevski/typeorm
 ## Usage
 
 ```
-npm i typeorm
+npm i typeorm reflect-metadata
 ns plugin add @pekevski/typeorm
 ```
+
+
+Then follow the setup instructions from [TypeOrm](https://typeorm.io/)
 
 ## License
 
