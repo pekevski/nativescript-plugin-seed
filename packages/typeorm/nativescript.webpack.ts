@@ -12,10 +12,7 @@ module.exports = (webpack) => {
     webpack.chainWebpack(config => {
 		
 		config.resolve.alias.set("supports-color", "supports-color/browser");
-
-		console.log(`@pekevski/typeorm package directory: ${__dirname}`)
-
-		config.resolve.alias.set("app-root-path", "./shim/app-root-path");
+		config.resolve.alias.set("app-root-path", `${__dirname}/shim/app-root-path`);
 		
 		// Add fallbacks for packages that TypeORM requires to work
 		// based off webpack v4 fallbacks https://webpack.js.org/configuration/resolve/#resolvefallback
