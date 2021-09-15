@@ -77,6 +77,20 @@ module.exports = {
 					description: '@pekevski/typeorm-compat: Build',
 				},
 			},
+			// @pekevski/test
+			'test': {
+				build: {
+					script: 'nx run test:build.all',
+					description: '@pekevski/test: Build',
+				},
+			},
+			// @pekevski/typeorm
+			'typeorm': {
+				build: {
+					script: 'nx run typeorm:build.all',
+					description: '@pekevski/typeorm: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -94,6 +108,14 @@ module.exports = {
 			'typeorm-compat': {
 				script: 'nx run typeorm-compat:focus',
 				description: 'Focus on @pekevski/typeorm-compat',
+			},
+			'test': {
+				script: 'nx run test:focus',
+				description: 'Focus on @pekevski/test',
+			},
+			'typeorm': {
+				script: 'nx run typeorm:focus',
+				description: 'Focus on @pekevski/typeorm',
 			},
 			reset: {
 				script: 'nx run all:focus',

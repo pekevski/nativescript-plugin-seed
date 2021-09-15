@@ -5,7 +5,7 @@ npm run setup
 npm start
 ```
 
-- @pekevski/typeorm-compat
+- @pekevski/typeorm
 
 # How to use?
 

@@ -12,7 +12,7 @@
           ],
           "options": {
             "commands": [
-              "nx run typeorm-compat:build.all"
+              "nx run typeorm:build.all"
             ],
             "parallel": false
           }
@@ -103,25 +103,25 @@
         }
       }
     },
-    "typeorm-compat": {
-      "root": "packages/typeorm-compat",
+    "typeorm": {
+      "root": "packages/typeorm",
       "projectType": "library",
-      "sourceRoot": "packages/typeorm-compat",
+      "sourceRoot": "packages/typeorm",
       "targets": {
         "build": {
           "executor": "@nrwl/node:package",
           "options": {
-            "outputPath": "dist/packages/typeorm-compat",
-            "tsConfig": "packages/typeorm-compat/tsconfig.json",
-            "packageJson": "packages/typeorm-compat/package.json",
-            "main": "packages/typeorm-compat/index.d.ts",
+            "outputPath": "dist/packages/typeorm",
+            "tsConfig": "packages/typeorm/tsconfig.json",
+            "packageJson": "packages/typeorm/package.json",
+            "main": "packages/typeorm/index.d.ts",
             "assets": [
-              "packages/typeorm-compat/*.md",
-              "packages/typeorm-compat/index.d.ts",
+              "packages/typeorm/*.md",
+              "packages/typeorm/index.d.ts",
               "LICENSE",
               {
                 "glob": "**/*",
-                "input": "packages/typeorm-compat/platforms/",
+                "input": "packages/typeorm/platforms/",
                 "output": "./platforms/"
               }
             ]
@@ -131,8 +131,8 @@
           "executor": "@nrwl/workspace:run-commands",
           "options": {
             "commands": [
-              "nx run typeorm-compat:build",
-              "node tools/scripts/build-finish.ts typeorm-compat"
+              "nx run typeorm:build",
+              "node tools/scripts/build-finish.ts typeorm"
             ],
             "parallel": false
           }
@@ -141,7 +141,7 @@
           "executor": "@nrwl/workspace:run-commands",
           "options": {
             "commands": [
-              "nx g @nativescript/plugin-tools:focus-packages typeorm-compat"
+              "nx g @nativescript/plugin-tools:focus-packages typeorm"
             ],
             "parallel": false
           }

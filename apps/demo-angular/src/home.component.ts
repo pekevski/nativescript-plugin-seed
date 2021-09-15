@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 	demos = [
 	{
-		name: 'typeorm-compat'
+		name: 'typeorm'
 	}
 ];
 }

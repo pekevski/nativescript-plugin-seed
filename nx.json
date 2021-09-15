@@ -23,7 +23,7 @@
     "demo-angular": {
       "tags": []
     },
-    "typeorm-compat": {
+    "typeorm": {
       "tags": []
     }
   },
