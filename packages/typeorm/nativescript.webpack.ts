@@ -1,3 +1,4 @@
+const { ProvidePlugin } = require("webpack");
 
 /**
  * This optionally provides typehints
@@ -54,7 +55,7 @@ module.exports = (webpack) => {
 			"mssql"
 		]);
 
-		config.plugin("ProvidePlugin|Polyfills").use(webpack.ProvidePlugin, [
+		config.plugin("ProvidePlugin|Polyfills").use(ProvidePlugin, [
 			{ Buffer: [require.resolve("buffer/"), "Buffer"] }
 		]);
 
