@@ -70,6 +70,13 @@ module.exports = {
 					description: '@pekevski/nativescript-downloader: Build',
 				},
 			},
+			// @pekevski/typeorm-compat
+			'typeorm-compat': {
+				build: {
+					script: 'nx run typeorm-compat:build.all',
+					description: '@pekevski/typeorm-compat: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -83,6 +90,10 @@ module.exports = {
 			'nativescript-downloader': {
 				script: 'nx run nativescript-downloader:focus',
 				description: 'Focus on @pekevski/nativescript-downloader',
+			},
+			'typeorm-compat': {
+				script: 'nx run typeorm-compat:focus',
+				description: 'Focus on @pekevski/typeorm-compat',
 			},
 			reset: {
 				script: 'nx run all:focus',

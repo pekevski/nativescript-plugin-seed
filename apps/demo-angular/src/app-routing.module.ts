@@ -7,7 +7,7 @@ import { HomeComponent } from './home.component';
 const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
-	{ path: 'nativescript-downloader', loadChildren: () => import('./plugin-demos/nativescript-downloader.module').then(m => m.NativescriptDownloaderModule) }
+	{ path: 'typeorm-compat', loadChildren: () => import('./plugin-demos/typeorm-compat.module').then(m => m.TypeormCompatModule) }
 ];
 
 @NgModule({

@@ -1,2 +1,2 @@
 export * from './utils';
-export * from './nativescript-downloader';
+export * from './typeorm-compat';

@@ -2,7 +2,8 @@
   "main": "./src/main.ts",
   "dependencies": {
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
-    "@nativescript/nativescript-downloader": "file:../../dist/packages/nativescript-downloader"
+    "@nativescript/nativescript-downloader": "file:../../dist/packages/nativescript-downloader",
+    "@pekevski/typeorm-compat": "file:../../dist/packages/typeorm-compat"
   },
   "devDependencies": {
     "@nativescript/android": "8.0.0",

@@ -5,7 +5,7 @@ npm run setup
 npm start
 ```
 
-- @pekevski/nativescript-downloader
+- @pekevski/typeorm-compat
 
 # How to use?
 
