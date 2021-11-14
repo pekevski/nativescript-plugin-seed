@@ -1,11 +1,5 @@
-# @pekevski/\* plugins
-
-```
-npm run setup
-npm start
-```
-
-- @pekevski/typeorm
+- [@pekevski/test](packages/test/README.md)
+- [@pekevski/typeorm](packages/typeorm/README.md)
 
 # How to use?
 

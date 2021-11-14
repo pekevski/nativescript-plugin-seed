@@ -91,6 +91,13 @@ module.exports = {
 					description: '@pekevski/typeorm: Build',
 				},
 			},
+			// @pekevski/daniel
+			'daniel': {
+				build: {
+					script: 'nx run daniel:build.all',
+					description: '@pekevski/daniel: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -116,6 +123,10 @@ module.exports = {
 			'typeorm': {
 				script: 'nx run typeorm:focus',
 				description: 'Focus on @pekevski/typeorm',
+			},
+			'daniel': {
+				script: 'nx run daniel:focus',
+				description: 'Focus on @pekevski/daniel',
 			},
 			reset: {
 				script: 'nx run all:focus',

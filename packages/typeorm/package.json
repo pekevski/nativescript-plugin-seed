@@ -39,7 +39,7 @@
     "typescript": "^4.4.3"
   },
   "peerDependencies": {
-    "typeorm": "*"
+    "typeorm": ">=0.2.39"
   },
   "dependencies": {
     "assert": "*",

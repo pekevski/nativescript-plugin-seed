@@ -7,6 +7,7 @@ import { HomeComponent } from './home.component';
 const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
+	{ path: 'test', loadChildren: () => import('./plugin-demos/test.module').then(m => m.TestModule) },
 	{ path: 'typeorm', loadChildren: () => import('./plugin-demos/typeorm.module').then(m => m.TypeormModule) }
 ];
 
